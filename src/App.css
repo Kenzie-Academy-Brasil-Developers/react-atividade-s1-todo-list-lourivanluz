@@ -15,46 +15,67 @@ li {
 
 .App-header {
   max-width: 1080px;
+  min-height: 100vh;
   margin: 0 auto;
+  background-color: rgb(247, 247, 247);
 }
 
-form {
-  margin: 0 auto;
+.inputTarefa {
   display: flex;
   justify-content: center;
   padding-top: 80px;
+  margin-bottom: 20px;
 }
 input {
   width: 400px;
   height: 40px;
   padding-left: 15px;
   border-radius: 15px 0 0 15px;
-  border: none;
+  border: 1px solid black;
+  border-right: none;
+  box-sizing: border-box;
 }
+
+input:focus {
+  outline: 0;
+}
+
 button {
+  -webkit-font-smoothing: antialiased;
+  list-style: none;
   width: 80px;
-  height: 42px;
+  height: 40px;
   background-color: cyan;
   color: rgb(4, 116, 116);
-  border: none;
+  border: 1px solid black;
   border-radius: 0 15px 15px 0;
+  cursor: pointer;
 }
 
 ul {
   display: flex;
   max-width: 495px;
-  margin-top: 45px;
+  margin: 0 auto;
   flex-direction: column;
+  background-color: #d3d0d0;
+  border-radius: 15px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.315);
+}
+
+ul > li:nth-child(n + 2):nth-child(n) {
+  border-top: 1px solid rgb(128, 125, 125);
 }
 
 li {
-  color: white;
+  color: rgb(56, 55, 55);
   font-size: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  padding: 10px;
+  text-transform: capitalize;
 }
+
 li > button {
   width: 32px;
   height: 32px;
@@ -62,4 +83,5 @@ li > button {
   background-color: red;
   color: white;
   border-radius: 50%;
+  border: none;
 }

@@ -19,9 +19,9 @@ function App() {
   return (
     <div className="App">
       <main className="App-header ">
-        <div>
+        <div className="inputTarefa">
           <input
-            placeholder="nova Tarefa"
+            placeholder="Nova Tarefa"
             type="text"
             value={taskNameImput}
             onChange={(event) => setTaskNameImput(event.target.value)}
